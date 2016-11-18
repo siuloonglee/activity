@@ -1,0 +1,109 @@
+html, body {
+	/*width: 7.2rem;*/
+	/*height: 10.80rem;*/
+	margin: 0 auto;
+	background: url(../img/background.png);
+	/*background-size: 7.20rem auto;  
+	-moz-background-size: 7.20rem auto;  
+	-webkit-background-size: 7.20rem auto; */
+	/*background-repeat:no-repeat*/
+}
+#close {
+	display: none;
+}
+#close img{
+	position: absolute;
+	left: .30rem;
+	top: .30rem;
+	z-index: 999;
+}
+#mengceng {
+	display: none;
+	width: 7.2rem;
+}
+#mengceng img{
+	position: absolute;
+	width: 6.6rem;
+	right: 0;
+	top: .35rem;
+	z-index: 999;
+}
+.luoimg {
+	position: absolute;
+	z-index: 12;
+	top: 0.5rem;
+	left: 0.3rem;
+	filter: alpha(opacity=100);
+}
+.luoyonghao img {
+	width: 6.6rem;
+	height: 2.91rem;
+}
+.dubaoimg {
+	position: absolute;
+	z-index: 11;
+	top: 0px;
+	left: 0px;
+	filter: alpha(opacity=100);
+}
+.dubaoimg img {
+	width: 7.2rem;
+	height: 8.17rem;
+}
+.dubao_label_img {
+	position: absolute;
+	z-index: 13;
+	top: 6.5rem;
+	left: 2rem;
+	filter: alpha(opacity=100);
+}
+.dubao_label_img img {
+	width: 3.18rem;
+	height: 1.71rem;
+}
+.download_img {
+	position: absolute;
+	z-index: 14;
+	top: 8.5rem;
+	left: 1.85rem;
+	filter: alpha(opacity=100);
+	display: none;
+}
+.download_img img {
+	width: 3.50rem;
+	height: 1.14rem;
+}
+
+/*动画名字， 动画运行的时间，alternate平滑过渡， infinite是反复执行*/
+.luoyonghao {
+	animation-name: luoyonghao;
+	animation: luoyonghao 1s alternate;
+	-webkit-animation: luoyonghao 1s alternate;
+	-moz-animation: luoyonghao 1s alternate infinite;
+}
+@-webkit-keyframes luoyonghao {
+	0% {
+		top: -4rem;
+		left: 0.3rem;
+	}
+	100% {
+		top: 0.5rem;
+		left: 0.3rem;
+	}
+}
+.dubao {
+	animation-name: dubao;
+	animation: dubao 1s alternate;
+	-webkit-animation: dubao 1s alternate;
+	-moz-animation: dubao 1s alternate infinite;
+}
+@-webkit-keyframes dubao {
+	0% {
+		left: 0px;
+		top: -20rem;
+	}
+	100% {
+		top: 0px;
+		left: 0px;
+	}
+}
